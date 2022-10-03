@@ -1,12 +1,12 @@
 import React from 'react';
 
 function Project({ project }) {
-  const { name, link, description, repo, image } = project;
+  const { name, link, description, repo, image, alt } = project;
 
   return (
     <div className="project-container">
       <div className="image-container">
-        <img src={image} />
+        <img src={image} alt={alt} />
       </div>
       <div className="content-container">
         <a href={link}><h3>{name}</h3></a>

@@ -3,13 +3,15 @@
 }
 
 .jumbotron {
-  background:url("./assets/background.jpg") no-repeat center fixed;
+  background: url("./assets/background.jpg") no-repeat center fixed;
   -webkit-background-composite: cover;
   background-size: cover;
   height: 90vh;
+  width: 95vw;
+  margin: 0 auto;
   display: flex;
   color: whitesmoke;
-  text-align: center;
+  text-align: right;
   align-items: center;
   vertical-align: middle;
   justify-content: center;
@@ -17,7 +19,6 @@
 }
 
 .jumbotron h1 {
-  max-width: 500px;
   line-height: 65px;
 }
 
@@ -35,28 +36,28 @@
   top: 0;
   z-index: 1020;
   display: flex;
-  width: 99%;
+  /* width: 100%; */
   flex-wrap: wrap;
-  margin: auto;
+  /* margin: auto; */
   justify-content: space-around;
-  background: radial-gradient(circle, rgba(47,49,66,1) 0%, rgb(29, 28, 31) 100%);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  box-shadow: 2px 2px #000000;
-  border-top: 2px solid black;
+  background: radial-gradient(circle, rgba(47, 49, 66, 1) 0%, rgb(29, 28, 31) 100%);
+  /* border-top-left-radius: 12px;
+  border-top-right-radius: 12px; */
+  /* box-shadow: 2px 2px #000000;
+  border-bottom: 2px solid black; */
   /* border-left: 2px solid rgb(0, 225, 255); */
-  border-bottom: 2px solid rgb(0, 225, 255);
-  border-right: 2px solid rgb(0, 225, 255);
+  /* border-bottom: 2px solid rgb(0, 225, 255);
+  border-right: 2px solid rgb(0, 225, 255); */
 }
 
 .nav-item {
   width: 250px;
-  height: 75px;
+  height: 55px;
   margin: 20px;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
-  line-height: 75px;
-  background: radial-gradient(circle, rgba(46,49,52,1) 0%, rgb(27, 21, 21) 100%);
+  line-height: 50px;
+  background: radial-gradient(circle, rgba(46, 49, 52, 1) 0%, rgb(27, 21, 21) 100%);
   color: #DEDEDE;
   box-shadow: 2px 2px black;
   border-radius: 20px;
@@ -67,7 +68,7 @@
 }
 
 .active {
-  background: radial-gradient(circle, rgba(46,49,52,1) 0%, rgba(93,20,20,1) 100%);
+  background: radial-gradient(circle, rgba(46, 49, 52, 1) 0%, rgba(93, 20, 20, 1) 100%);
   border-color: black;
   box-shadow: 2px 2px #4d4d4d;
 }
@@ -88,14 +89,40 @@
   color: gray;
 }
 
+#banner-left {
+  max-width: 75vh;
+  margin: 0 auto;
+  padding: 0 30px;
+  font-size: 30px;
+}
+
+#banner-right {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+#home-button {
+  color: rgb(0, 225, 225);
+  background: radial-gradient(circle, rgba(47, 49, 66, 1) 0%, rgb(29, 28, 31) 100%);
+  text-align: center;
+  padding-bottom: 10px;
+  width: 100vw;
+}
+
 #pfp-container {
   flex: 0 2 400px;
 }
 
 #profile-pic {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
+  /* object-fit: contain; */
+  width: 400px;
+  border-color: rgba(46, 49, 52, 1);
+  border-width: 6px;
+  border-style: solid;
+  border-radius: 8px;
+  outline-color: black;
+  outline-width: 3px;
+  outline-style: solid;
 }
 
 #blurb {
@@ -185,7 +212,7 @@ textarea {
 form .button {
   margin: 6px;
   color: #DEDEDE;
-  background: radial-gradient(circle, rgba(46,49,52,1) 0%, rgba(93,20,20,1) 100%);
+  background: radial-gradient(circle, rgba(46, 49, 52, 1) 0%, rgba(93, 20, 20, 1) 100%);
   outline-color: black;
 }
 
@@ -212,11 +239,21 @@ form .button {
 
 @media screen and (max-width: 992px) {
   .jumbotron {
-    height: 250px;
+    height: fit-content;
   }
+
+  #banner-left {
+    font-size: 20px;
+  }
+
+  #banner-right {
+    display: none;
+  }
+
   .image-container {
     display: none;
   }
+
   .nav-item {
     width: 125px;
     height: 65px;
@@ -224,6 +261,7 @@ form .button {
     line-height: 65px;
     border-radius: 16px;
   }
+
   #pfp-container {
     display: none;
   }
