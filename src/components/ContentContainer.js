@@ -1,5 +1,5 @@
 // rfce
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar.js';
 import Banner from './Banner.js';
 import Footer from './Footer.js';
@@ -16,17 +16,22 @@ function ContentContainer() {
   const renderPage = () => {
     if (currentPage === '' || currentPage === 'About') {
       return <Blurb />;
-    }
-    if (currentPage === 'Portfolio') {
+    } else if (currentPage === 'Portfolio') {
       return <Portfolio />;
-    }
-    if (currentPage === 'Contact') {
+    } else if (currentPage === 'Contact') {
       return <Contact />;
-    }
-  }
+    };
+  };
 
-  const handlePageChange = page => setCurrentPage(page);
-  
+  const handlePageChange = page => {
+    setCurrentPage(page);
+    // setInterval(() => {
+    document.getElementById("content-container").scrollIntoView({
+      behavior: 'smooth'
+    })
+    // }, 100);
+  };
+
   // const homeHandler = () => {
   //   // setCurrentPage('');
   //   setDisplayBanner(true);
