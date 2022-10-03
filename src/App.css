@@ -1,0 +1,246 @@
+.body {
+  background-color: rgb(29, 28, 31);
+}
+
+.jumbotron {
+  background:url("./assets/background.jpg") no-repeat center fixed;
+  -webkit-background-composite: cover;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  color: whitesmoke;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  text-shadow: 2px 2px #000000;
+}
+
+.jumbotron h1 {
+  max-width: 500px;
+  line-height: 65px;
+}
+
+.blurb-container {
+  display: flex;
+  padding: .75rem;
+  justify-content: space-evenly;
+  background-color: white;
+  max-width: 1000px;
+  border-radius: 20px;
+}
+
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  display: flex;
+  width: 99%;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+  background: radial-gradient(circle, rgba(47,49,66,1) 0%, rgb(29, 28, 31) 100%);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 2px 2px #000000;
+  border-top: 2px solid black;
+  /* border-left: 2px solid rgb(0, 225, 255); */
+  border-bottom: 2px solid rgb(0, 225, 255);
+  border-right: 2px solid rgb(0, 225, 255);
+}
+
+.nav-item {
+  width: 250px;
+  height: 75px;
+  margin: 20px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 75px;
+  background: radial-gradient(circle, rgba(46,49,52,1) 0%, rgb(27, 21, 21) 100%);
+  color: #DEDEDE;
+  box-shadow: 2px 2px black;
+  border-radius: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #7c7c7c;
+  cursor: pointer;
+}
+
+.active {
+  background: radial-gradient(circle, rgba(46,49,52,1) 0%, rgba(93,20,20,1) 100%);
+  border-color: black;
+  box-shadow: 2px 2px #4d4d4d;
+}
+
+.nav-item:hover {
+  color: white;
+  background: radial-gradient(circle, rgb(54, 56, 58) 0%, rgb(100, 18, 18) 100%);
+  border-color: black;
+  box-shadow: 2px 2px #2e7b81;
+}
+
+.custom-navbar a {
+  color: #DEDEDE;
+  text-decoration: none;
+}
+
+.custom-navbar a {
+  color: gray;
+}
+
+#pfp-container {
+  flex: 0 2 400px;
+}
+
+#profile-pic {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+#blurb {
+  flex: 1 1 400px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  max-width: 800px;
+  margin: auto;
+}
+
+#blurb p {
+  font-size: 18px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#content-container {
+  height: fit-content;
+  block-size: fit-content;
+  margin-bottom: 40px;
+}
+
+.content-header {
+  text-align: center;
+  margin: 40px 0;
+  color: #DEDEDE;
+}
+
+.projects-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container {
+  display: flex;
+  padding: 10px 30px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background: whitesmoke;
+  border-radius: 14px;
+}
+
+.image-container {
+  width: 30%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.image-container img {
+  padding-right: 30px;
+  max-width: 350px;
+  margin: auto;
+}
+
+.content-container {
+  justify-self: right;
+}
+
+.content-container p {
+  padding-top: 6px;
+  font-size: 20px;
+}
+
+#contact-blurb {
+  max-width: 700px;
+  margin: auto;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin: 12px auto;
+}
+
+.form-group-narrow {
+  max-width: 400px;
+}
+
+textarea {
+  height: 200px;
+}
+
+form .button {
+  margin: 6px;
+  color: #DEDEDE;
+  background: radial-gradient(circle, rgba(46,49,52,1) 0%, rgba(93,20,20,1) 100%);
+  outline-color: black;
+}
+
+.github-element {
+  float: right;
+}
+
+#footer {
+  border-top: 2px solid rgb(0, 225, 255);
+  padding: 16px;
+  border-top-right-radius: 20px;
+}
+
+#footer p {
+  color: rgb(148, 148, 148);
+  display: inline;
+  padding-left: 40px;
+  font-size: 18px;
+}
+
+#footer a {
+  color: rgb(0, 225, 225);
+}
+
+@media screen and (max-width: 992px) {
+  .jumbotron {
+    height: 250px;
+  }
+  .image-container {
+    display: none;
+  }
+  .nav-item {
+    width: 125px;
+    height: 65px;
+    font-size: 22px;
+    line-height: 65px;
+    border-radius: 16px;
+  }
+  #pfp-container {
+    display: none;
+  }
+}
+
+/* @media screen and (max-width: 992px) {
+  .custom-navbar {
+    flex-direction: column;
+    float: left;
+    height: 100vh;
+  }
+  .nav-item {
+    width: 150px;
+    height: 50px;
+  }
+  .projects-container {
+    width: 600px;
+    float: right;
+  }
+} */
