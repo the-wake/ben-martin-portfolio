@@ -1,6 +1,6 @@
 {
-  "name": "a20-react-portfolio",
-  "version": "0.1.0",
+  "name": "portfolio-ben-martin",
+  "version": "1.0.0",
   "homepage": "https://the-wake.github.io/a20-react-portfolio",
   "private": true,
   "dependencies": {
@@ -14,6 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.1.3",
     "css": "^3.0.0",
+    "emailjs-com": "^3.2.0",
     "gh-pages": "^3.2.3",
     "min": "^0.2.2",
     "react": "^17.0.2",
