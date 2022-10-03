@@ -6,8 +6,7 @@ function Banner() {
     <div className="jumbotron">
       <div id={"banner-left"}>
         <h1>Ben Martin</h1>
-
-        <p>Independent full-stack web designer based in Minneapolis, Minnesota with an eye for simple, elegant, flexible design.</p>
+        <p>Flexible, systems-oriented web development with a human touch.</p>
       </div>
       <div id={"banner-right"}>
         <img src={image} alt={'Profile'} id="profile-pic" />

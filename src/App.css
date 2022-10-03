@@ -90,14 +90,19 @@
 }
 
 #banner-left {
-  max-width: 75vh;
+  width: 50vw;
+  max-width: 650px;
   margin: 0 auto;
   padding: 0 30px;
-  font-size: 30px;
+  font-size: 36px;
+}
+
+#banner-left h1 {
+  font-size: 54px;
 }
 
 #banner-right {
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   padding: 0 30px;
 }
 
@@ -142,6 +147,7 @@
 
 #content-container {
   height: fit-content;
+  min-height: 82vh;
   block-size: fit-content;
   margin-bottom: 40px;
 }
@@ -243,7 +249,12 @@ form .button {
   }
 
   #banner-left {
-    font-size: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #banner-left h1 {
+    font-size: 40px;
   }
 
   #banner-right {
