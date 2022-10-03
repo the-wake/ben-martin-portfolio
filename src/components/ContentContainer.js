@@ -31,6 +31,9 @@ function ContentContainer() {
       alignToTop: true,
       behavior: 'smooth'
     });
+    setInterval(() => {
+      setCurrentPage('');
+    }, 1250);
   };
 
   // const homeHandler = () => {
