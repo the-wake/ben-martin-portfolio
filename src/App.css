@@ -216,10 +216,13 @@ textarea {
 }
 
 form .button {
+  width: 90px;
+  height: 40px;
   margin: 6px;
   color: #DEDEDE;
   background: radial-gradient(circle, rgba(46, 49, 52, 1) 0%, rgba(93, 20, 20, 1) 100%);
   outline-color: black;
+  border-radius: 8px;
 }
 
 .github-element {
