@@ -15,6 +15,7 @@ function Portfolio() {
       link: 'https://frozen-bayou-97963.herokuapp.com/',
       description: 'One of the toughtest parts of running a tabletop RPG dungeon is simply keeping track of every last creature, trinket, and secret. Dungeon Crawler is a full-stack SQL-driven website that makes tracking a sprawling campaign as easy as clicking a button. This application takes the tedium out of running dungeons by letting users quickly and easily do things like create dungeons and rooms, manage monsters, update stats, and even allows for multiple campaigns to be managed at once!',
       image: imgCrawler,
+      alt: 'Dungeon Crawler, for all you campaign organizational needs!',
       repo: 'https://github.com/the-wake/project-2-dungeon-crawler',
     },
     {
@@ -22,6 +23,7 @@ function Portfolio() {
       link: 'https://the-wake.github.io/project-1-dnd/',
       description: 'Every DM (Dungeon Master) knows that you can\'t build an encounter without monsters! Every DM also knows that as a system ages, tracking down monsters becomes a huge hassle. The D&D Monster Finder uses the open5e API to seach monsters from a huge range of official and unofficial sources. Users can select their desired Challenge Rating, browse mosters color-coded by type, and save lists of monsters they intend to use.',
       image: imgFinder,
+      alt: 'Monster Finder makes finding the right creatures a breeze!',
       repo: 'https://github.com/the-wake/project-1-dnd',
     },
     {
@@ -29,6 +31,7 @@ function Portfolio() {
       link: 'https://vast-citadel-10428.herokuapp.com/',
       description: 'A full-stack, SQL-driven blog webpage. Users can create and edit posts, write comments, and render lists of recent posts. Includes user validation, session storage, several layers of security, a range of useful methods. Heroku hosting allows babck-end functionality on the live deployment.',
       image: imgBlog,
+      alt: 'This is one of the blogs of all time.',
       repo: 'https://github.com/the-wake/assignment-14-blog',
     },
     {
@@ -36,6 +39,7 @@ function Portfolio() {
       link: 'https://github.com/the-wake/assignment-12-employee-management',
       description: 'A fully back-end application run via the command line (Node.js). Users can create and update departments, job titles, and employees. The back-end MySQL database enables useful and powerful connections to be created between data points for easy reference and correlation.',
       image: imgEms,
+      alt: 'Create and querry teams in a flash!',
       repo: 'https://github.com/the-wake/assignment-12-employee-management',
     },
     {
@@ -43,6 +47,7 @@ function Portfolio() {
       link: 'https://safe-earth-41888.herokuapp.com/',
       description: 'A simple text editor program built and deployed using Webpackage architecture. User-entered data is automatically stored to local sotrage and IndexedDB via service workers. This lets the user pick up where they left off. In addition, the application can be downloaded and run locally, with the local intance being automatically synced with the online application.',
       image: imgEditor,
+      alt: 'Edit text like a boss!',
       repo: 'https://github.com/the-wake/a19-text-editor',
     },
     {
@@ -50,6 +55,7 @@ function Portfolio() {
       link: 'https://the-wake.github.io/assignment-6-weather/',
       description: 'Have you ever wondered what the weather is like outside? Have you ever wondered what the weather is like somewhere else? Have you ever wanted to know what the weather will be like five days from now? If you answered "yes" to any of these questions, congratulations! This application can answer them for you! Drawing from the OpenWeather API, it will return the current conditions and 5-day forecast for any city you enter.',
       image: imgWeather,
+      alt: 'It\'s always sunny somewhere!',
       repo: 'https://github.com/the-wake/assignment-6-weather',
     },
     {
@@ -57,6 +63,7 @@ function Portfolio() {
       link: 'https://github.com/the-wake/a18-social-media-api',
       description: 'This back-end Mongoose-based API has a robust suite of queries allowing users to create accounts, post thoughts, and comment on each other\'s posts. The NoSQL nature of the database allows for greater flexibility in the data, and allows easy creation of connections between data points.',
       image: imgSocialMedia,
+      alt: 'Putting the API back in APprecIation!',
       repo: 'https://github.com/the-wake/a18-social-media-api',
     },
   ]);

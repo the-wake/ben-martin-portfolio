@@ -5,7 +5,7 @@ function Contact() {
     <div className="content-header">
       <h1>Get In Touch</h1>
       <div id="contact-blurb">
-        <p>Thanks for reaching out! Feel free to leave your name, email address, and a breif description of your project or question. Or, if you prefer, you can contact me via <a href="mailto:bmartin2009@gmail.com?subject = Inquiry">email</a> or <a href="https://www.linkedin.com/in/ben-martin-26266443/" target="_blank">LinkedIn</a>.</p>
+        <p>Thanks for reaching out! Feel free to leave your name, email address, and a breif description of your project or question. Or, if you prefer, you can contact me via <a href="mailto:bmartin2009@gmail.com?subject = Inquiry">email</a> or <a href="https://www.linkedin.com/in/ben-martin-26266443/" target="_blank" rel="noreferrer">LinkedIn</a>.</p>
       </div>
       <form>
         <div className="form-group form-group-narrow">
@@ -25,6 +25,6 @@ function Contact() {
       </form>
     </div>
   );
-}
+};
 
 export default Contact;
