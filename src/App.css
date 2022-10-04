@@ -268,9 +268,11 @@ form .button:hover {
 }
 
 #footer {
-  border-top: 2px solid rgb(0, 225, 255);
+  background-color: black;
   padding: 16px;
-  border-top-right-radius: 20px;
+  border-top: 2px solid rgb(0, 225, 255);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 #footer p {
