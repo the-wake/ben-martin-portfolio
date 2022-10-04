@@ -1,11 +1,11 @@
 import React from 'react';
-import resume from '../assets/resume.pdf';
+import resume from '../assets/Resume-Ben-Martin.pdf';
 
 // Could add js to make the page scroll to this y-coord when clicked.
 function Navbar({ currentPage, handlePageChange }) {
 
   return (
-    <div className="custom-navbar">
+    <div id="navbar">
       <div
         className={`nav-item ${currentPage === 'About' ? 'nav-item active' : 'nav-item'}`} id="about-link" href="#/about"
         onClick={() => handlePageChange('About')}>

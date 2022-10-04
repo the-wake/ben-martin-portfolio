@@ -9,7 +9,7 @@
   border-radius: 0px;
 }
 
-.custom-navbar {
+#navbar {
   position: sticky;
   top: 0;
   z-index: 1020;
@@ -26,6 +26,8 @@
   border-left: 2px solid rgb(0, 225, 255);
   border-bottom: 2px solid rgb(0, 225, 255);
   border-right: 2px solid rgb(0, 225, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .nav-item {
@@ -58,12 +60,12 @@
   box-shadow: 2px 2px #2e7b81;
 }
 
-.custom-navbar a {
+#navbar a {
   color: #DEDEDE;
   text-decoration: none;
 }
 
-.custom-navbar a {
+#navbar a {
   color: gray;
 }
 
@@ -341,19 +343,3 @@ form .button:hover {
     margin: 0 20px;
   }
 }
-
-/* @media screen and (max-width: 992px) {
-  .custom-navbar {
-    flex-direction: column;
-    float: left;
-    height: 100vh;
-  }
-  .nav-item {
-    width: 150px;
-    height: 50px;
-  }
-  .projects-container {
-    width: 600px;
-    float: right;
-  }
-} */
