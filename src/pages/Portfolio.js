@@ -12,7 +12,7 @@ function Portfolio() {
     {
       name: 'Dungeon Delver',
       link: 'https://dungeon-delver-main.herokuapp.com/',
-      description: 'One of the toughtest parts of running a tabletop RPG dungeon is simply keeping track of every last creature, trinket, and secret. Dungeon Crawler is a full-stack SQL-driven website that makes tracking a sprawling campaign as easy as clicking a button. This application takes the tedium out of running dungeons by letting users quickly and easily do things like create dungeons and rooms, manage monsters, update stats, and even allows for multiple campaigns to be managed at once! (Refactored from a previous version using Handlebars and Sequelize.)',
+      description: 'One of the toughtest parts of running a tabletop RPG dungeon is simply keeping track of every last creature, trinket, and secret. Dungeon Delver is a full-stack SQL-driven website that makes tracking a sprawling campaign as easy as clicking a button. This application takes the tedium out of running dungeons by letting users quickly and easily do things like create dungeons and rooms, manage monsters, update stats, and even allows for multiple campaigns to be managed at once! (Refactored from a previous version using Handlebars and Sequelize.)',
       image: imgDelver,
       alt: 'Dungeon Delver, for all you campaign organizational needs!',
       repo: 'https://github.com/the-wake/dungeon-delver-main',
