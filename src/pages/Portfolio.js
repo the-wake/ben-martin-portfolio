@@ -29,7 +29,7 @@ function Portfolio() {
     {
       name: 'Full-Stack Blog',
       link: 'https://vast-citadel-10428.herokuapp.com/',
-      description: 'A full-stack, SQL-driven blog webpage. Users can create and edit posts, write comments, and render lists of recent posts. Includes user validation, session storage, several layers of security, a range of useful methods. Heroku hosting allows babck-end functionality on the live deployment.',
+      description: 'A full-stack, SQL-driven blog webpage. Users can create and edit posts, write comments, and render lists of recent posts. Includes user validation, session storage, several layers of security, a range of useful methods. Heroku hosting allows back-end functionality on the live deployment.',
       image: imgBlog,
       alt: 'This is one of the blogs of all time.',
       repo: 'https://github.com/the-wake/assignment-14-blog',

@@ -13,23 +13,27 @@ function ContentContainer() {
   // const [displayBanner, setDisplayBanner] = useState(true);
   // const isMounted = useRef(false);
 
-  const renderPage = () => {
-    if (currentPage === '' || currentPage === 'About') {
-      return <Blurb />;
-    } else if (currentPage === 'Portfolio') {
-      return <Portfolio />;
-    } else if (currentPage === 'Contact') {
-      return <Contact />;
-    };
-  };
+  // const renderPage = () => {
+  //   if (currentPage === '' || currentPage === 'About') {
+  //     return <Blurb />;
+  //   } else if (currentPage === 'Portfolio') {
+  //     return <Portfolio />;
+  //   } else if (currentPage === 'Contact') {
+  //     return <Contact />;
+  //   };
+  // };
 
   const handlePageChange = page => {
     setCurrentPage(page);
-    // setInterval(() => {
-    document.getElementById("content-container").scrollIntoView({
+    // document.getElementById('content-container').scrollIntoView();
+    const targetComponent = document.getElementById(page.toLowerCase());
+    targetComponent.scrollIntoView({
+      alignToTop: true,
       behavior: 'smooth'
-    })
-    // }, 100);
+    });
+    setInterval(() => {
+      setCurrentPage('');
+    }, 1250);
   };
 
   // const homeHandler = () => {
@@ -56,9 +60,18 @@ function ContentContainer() {
           : <div id="home-button">Back home</div>
       } */}
       <div id="content-container">
-        {renderPage()}
+        {/* {renderPage()} */}
+        <div id="about">
+          <Blurb />
+        </div>
+        <div id="portfolio">
+          <Portfolio />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   )
 }
