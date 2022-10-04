@@ -1,7 +1,7 @@
 {
   "name": "portfolio-ben-martin",
   "version": "1.0.0",
-  "homepage": "https://the-wake.github.io/professional-portfolio",
+  "homepage": "https://the-wake.github.io/portfolio-ben-martin",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.1",
