@@ -27,11 +27,11 @@ function Portfolio() {
     },
     {
       name: 'Dungeon Seekers',
-      link: 'https://the-wake.github.io/project-1-dnd/',
+      link: 'https://the-wake.github.io/dungeon-seekers//',
       description: 'Every Dungeon Master knows that you can\'t build a Dungeons & Dragons encounter without monsters! However, with years\' worth of creatures spread over dozens of published materials, simply finding monsters\' stats becomes a huge hassle. The D&D Monster Finder uses the open5e API to seach monsters from a huge range of official and unofficial sources. Users can select their desired Challenge Rating, browse mosters color-coded by type, and save lists of monsters they intend to use.',
       image: imgSeekers,
       alt: 'Dungeon Seekers makes finding the right creature a breeze!',
-      repo: 'https://github.com/the-wake/project-1-dnd',
+      repo: 'https://github.com/the-wake/dungeon-seekers',
     },
     {
       name: 'Full-Stack Blog',
