@@ -195,10 +195,15 @@
   border-radius: 14px;
 }
 
-.project-image {
+.image-link {
+  margin: auto 30px auto 10px;
   width: 30%;
   max-width: 400px;
-  margin: auto 30px auto 10px;
+}
+
+
+.project-image {
+  max-width: 400px;
   outline-style: solid;
   outline-width: 3px;
   outline-color: black;
@@ -207,7 +212,6 @@
   border-width: 3px;
   border-radius: 12px;
 }
-
 .content-container {
   justify-self: right;
 }
