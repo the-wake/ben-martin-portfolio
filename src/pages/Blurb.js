@@ -11,10 +11,10 @@ function Blurb() {
         </div> */}
         <div id="blurb">
           <p>
-            Hello! I'm Ben Martin, an independent full-stack web designer based in Minneapolis, Minnesota. I specialize in creating highly usable, visually pleasing style and practical, flexible, dynamic design.
+            Hello! I'm Ben Martin, an independent full-stack web developer based in Minneapolis, Minnesota. I specialize in creating highly usable, visually pleasing style and practical, flexible, dynamic design.
             <br />
             <br />
-            My greatest strength as a developer is my systems-oriented thought process, which helps me easily envision and implement solutions to complex problems. On top of that, my ability to quickly learn new skills helps me quickly integrate to new teams and pick up new processes.
+            My greatest strength as a developer is my systems-oriented thinking, which helps me easily envision and implement solutions to complex problems. As a quick learner, I can quickly integrate with new teams and pick up new skillsets.
             <br />
             <br />
             In addition to web design and programming, I design board games. I have two published games and more in the works! In my free time, I enjoy playing Smash Bros. Ultimate (Samus main) and Dungeons & Dragons 5th edition. I have a borderline unhealthy love of the cyberpunk genre and firmly believe that Ghost in the Shell 1995 is the greatest film of all time.
