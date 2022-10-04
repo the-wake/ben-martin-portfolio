@@ -1,22 +1,29 @@
 import React, { useState } from 'react';
 import Project from '../components/Project.js';
-import imgCrawler from '../assets/crawler.jpg';
+import imgDelver from '../assets/dungeon-delver.jpg';
+import imgJarvis from '../assets/jarvis.jpg';
 import imgFinder from '../assets/dnd.jpg';
 import imgBlog from '../assets/blog.jpg';
 import imgEms from '../assets/ems.jpg';
-import imgEditor from '../assets/jate.jpg';
-import imgWeather from '../assets/weather.jpg';
 import imgSocialMedia from '../assets/social-media-api.jpg';
 
 function Portfolio() {
   const [projects] = useState([
     {
-      name: 'Dungeon Crawler',
-      link: 'https://frozen-bayou-97963.herokuapp.com/',
-      description: 'One of the toughtest parts of running a tabletop RPG dungeon is simply keeping track of every last creature, trinket, and secret. Dungeon Crawler is a full-stack SQL-driven website that makes tracking a sprawling campaign as easy as clicking a button. This application takes the tedium out of running dungeons by letting users quickly and easily do things like create dungeons and rooms, manage monsters, update stats, and even allows for multiple campaigns to be managed at once!',
-      image: imgCrawler,
-      alt: 'Dungeon Crawler, for all you campaign organizational needs!',
-      repo: 'https://github.com/the-wake/project-2-dungeon-crawler',
+      name: 'Dungeon Delver',
+      link: 'https://dungeon-delver-main.herokuapp.com/',
+      description: 'One of the toughtest parts of running a tabletop RPG dungeon is simply keeping track of every last creature, trinket, and secret. Dungeon Crawler is a full-stack SQL-driven website that makes tracking a sprawling campaign as easy as clicking a button. This application takes the tedium out of running dungeons by letting users quickly and easily do things like create dungeons and rooms, manage monsters, update stats, and even allows for multiple campaigns to be managed at once! (Refactored from a previous version using Handlebars and Sequelize.)',
+      image: imgDelver,
+      alt: 'Dungeon Delver, for all you campaign organizational needs!',
+      repo: 'https://github.com/the-wake/dungeon-delver-main',
+    },
+    {
+      name: 'Jarvis: The Smash Bros. Companion',
+      link: 'https://the-wake.github.io/jarvis-smash-companion/',
+      description: 'A companion app for Super Smash Bros. Ultimate ironman challenges. Built in React, the app helps users track their challenge attempts, providing win/loss tracking, persistent data, a random character selection algorithm, and more. Currently a work-in-progress, the application could easily be scaled up to use the complete MERN stack, save run histories, and support other types of challenges and analysis.',
+      image: imgJarvis,
+      alt: 'Jarvis helps players track their Super Smash Bros. challenge attempts.',
+      repo: 'https://github.com/the-wake/jarvis-smash-companion',
     },
     {
       name: 'Monster Finder',
@@ -41,22 +48,6 @@ function Portfolio() {
       image: imgEms,
       alt: 'Create and querry teams in a flash!',
       repo: 'https://github.com/the-wake/assignment-12-employee-management',
-    },
-    {
-      name: 'Text Editor',
-      link: 'https://safe-earth-41888.herokuapp.com/',
-      description: 'A simple text editor program built and deployed using Webpackage architecture. User-entered data is automatically stored to local sotrage and IndexedDB via service workers. This lets the user pick up where they left off. In addition, the application can be downloaded and run locally, with the local intance being automatically synced with the online application.',
-      image: imgEditor,
-      alt: 'Edit text like a boss!',
-      repo: 'https://github.com/the-wake/a19-text-editor',
-    },
-    {
-      name: 'Weather Dashboard',
-      link: 'https://the-wake.github.io/assignment-6-weather/',
-      description: 'Have you ever wondered what the weather is like outside? Have you ever wondered what the weather is like somewhere else? Have you ever wanted to know what the weather will be like five days from now? If you answered "yes" to any of these questions, congratulations! This application can answer them for you! Drawing from the OpenWeather API, it will return the current conditions and 5-day forecast for any city you enter.',
-      image: imgWeather,
-      alt: 'It\'s always sunny somewhere!',
-      repo: 'https://github.com/the-wake/assignment-6-weather',
     },
     {
       name: 'Social Media API',

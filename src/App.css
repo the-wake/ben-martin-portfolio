@@ -253,6 +253,11 @@ form .button {
   border-radius: 8px;
 }
 
+form .button:hover {
+  color: #DEDEDE;
+  background: radial-gradient(circle, rgb(67, 71, 75) 0%, rgb(80, 23, 23) 100%);
+}
+
 .github-element {
   float: right;
 }
