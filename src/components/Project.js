@@ -5,9 +5,7 @@ function Project({ project }) {
 
   return (
     <div className="project-container">
-      <div className="image-container">
-        <img src={image} alt={alt} />
-      </div>
+      <img src={image} alt={alt} className='project-image'/>
       <div className="content-container">
         <a href={link}><h3>{name}</h3></a>
         <p>{description}</p>
