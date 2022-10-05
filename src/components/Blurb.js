@@ -3,7 +3,7 @@ import React from 'react';
 
 function Blurb() {
   return (
-    <div>
+    <div id="about">
       <h1 className="content-header">About Me</h1>
       <div id="blurb-container">
         {/* <div id="pfp-container">

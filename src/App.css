@@ -7,11 +7,15 @@
   background-color: rgb(29, 28, 31);
   background: radial-gradient(circle, rgb(29, 28, 31) 0%, rgb(34, 35, 46) 100%);
   border-radius: 0px;
+  min-width: fit-content;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
 #navbar {
-  position: sticky;
-  top: 0;
   z-index: 1020;
   display: flex;
   width: 97%;
@@ -67,6 +71,11 @@
 
 #navbar a {
   color: gray;
+}
+
+#resume-container {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .jumbotron {
