@@ -20,14 +20,13 @@ function ContentContainer() {
 
   const handlePageChange = page => {
     setCurrentPage(page);
-    // Ignore behavior if user navigates to Resume page.
-    console.log(currentPage);
-    if (currentPage === 'Resume') {
-      return
-    } else {
+    const targetComponent = document.getElementById(page.toLowerCase());
 
+    // Ignore behavior if user navigates to Resume page.
+    if (page === 'Resume') {
+      window.scrollTo(0, 0);
+    } else if (targetComponent) {
       // document.getElementById('content-container').scrollIntoView();
-      const targetComponent = document.getElementById(page.toLowerCase());
       // console.log(targetComponent);
       targetComponent.scrollIntoView({
         alignToTop: true,
@@ -40,7 +39,6 @@ function ContentContainer() {
     <div className="body">
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       { currentPage === 'Resume' ? null : <Banner />}
-      {/* I could put something in the Banner component to shink it when a link is clicked. */}
       <div id="main-content">
         {renderPage()}
       </div>

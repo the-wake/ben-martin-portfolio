@@ -9,9 +9,12 @@
   border-radius: 0px;
 }
 
-#navbar {
+.sticky {
   position: sticky;
   top: 0;
+}
+
+#navbar {
   z-index: 1020;
   display: flex;
   width: 97%;
@@ -70,8 +73,8 @@
 }
 
 #resume-container {
-  height: fit-content;
   width: fit-content;
+  margin: 0 auto;
 }
 
 .jumbotron {
