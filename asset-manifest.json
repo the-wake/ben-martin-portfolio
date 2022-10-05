@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-ben-martin/static/css/main.ab0e5845.css",
-    "main.js": "/portfolio-ben-martin/static/js/main.05c2ec40.js",
+    "main.css": "/portfolio-ben-martin/static/css/main.68306cf5.css",
+    "main.js": "/portfolio-ben-martin/static/js/main.7d478f2d.js",
     "static/media/dungeon-delver.jpg": "/portfolio-ben-martin/static/media/dungeon-delver.4e0ae2438a969552b40c.jpg",
     "static/media/jarvis.jpg": "/portfolio-ben-martin/static/media/jarvis.df8b8299949a53f60c0f.jpg",
     "static/media/seekers.jpg": "/portfolio-ben-martin/static/media/seekers.a7d08cf8aef721f3f7e1.jpg",
@@ -44,11 +44,11 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/portfolio-ben-martin/static/media/roboto-greek-ext-300-normal.04e05839d6a35e046c13.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/portfolio-ben-martin/static/media/roboto-greek-ext-700-normal.9674bc0ae12c2551d9d1.woff2",
     "index.html": "/portfolio-ben-martin/index.html",
-    "main.ab0e5845.css.map": "/portfolio-ben-martin/static/css/main.ab0e5845.css.map",
-    "main.05c2ec40.js.map": "/portfolio-ben-martin/static/js/main.05c2ec40.js.map"
+    "main.68306cf5.css.map": "/portfolio-ben-martin/static/css/main.68306cf5.css.map",
+    "main.7d478f2d.js.map": "/portfolio-ben-martin/static/js/main.7d478f2d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab0e5845.css",
-    "static/js/main.05c2ec40.js"
+    "static/css/main.68306cf5.css",
+    "static/js/main.7d478f2d.js"
   ]
 }
