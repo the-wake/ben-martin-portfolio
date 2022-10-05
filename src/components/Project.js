@@ -17,14 +17,14 @@ function Project({ project }) {
 
   return (
     <div className="project-container">
-      <a className="image-link" rel="noreferrer" href={link} target="_blank">
+      <a className="image-link" href={link} target="_blank" rel="noreferrer">
         <img src={image} alt={alt} className="project-image" />
       </a>
       <div className="content-container">
         <a href={link} target="_blank" rel="noreferrer"><h3>{name}</h3></a>
         <p className="project-description">{description}</p>
         <p className="deployment-message">{deployMessage}</p>
-        <a href={repo} target="_blank" rel="noreferrer" className="github-element">GitHub Repo</a>
+        <a className="github-element" href={repo} target="_blank" rel="noreferrer">GitHub Repo</a>
       </div>
     </div>
   )

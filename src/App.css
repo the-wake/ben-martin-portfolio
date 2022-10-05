@@ -79,6 +79,7 @@
 }
 
 .jumbotron {
+  border-radius: 0;
   background: url("./assets/background.jpg") no-repeat center fixed;
   -webkit-background-composite: cover;
   background-size: cover;
@@ -180,12 +181,6 @@
   text-align: center;
 }
 
-#content-container {
-  height: fit-content;
-  min-height: 82vh;
-  block-size: fit-content;
-}
-
 .content-header {
   text-align: center;
   margin: 40px 0;
@@ -231,6 +226,11 @@
 
 .content-container {
   justify-self: right;
+}
+
+.content-container a {
+  display: inline-block;
+  max-width: fit-content;
 }
 
 .project-description {
