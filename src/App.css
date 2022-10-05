@@ -1,3 +1,7 @@
+:root {
+  --main-gradient: radial-gradient(circle, rgb(29, 28, 31) 0%, rgb(34, 35, 46) 100%);
+}
+
 * {
   scroll-margin-top: 125px;
   border-radius: 9px;
@@ -5,7 +9,7 @@
 
 .body {
   background-color: rgb(29, 28, 31);
-  background: radial-gradient(circle, rgb(29, 28, 31) 0%, rgb(34, 35, 46) 100%);
+  background: var(--main-gradient);
   border-radius: 0px;
   min-width: fit-content;
 }
@@ -182,9 +186,9 @@
 }
 
 .content-header {
+  color: #DEDEDE;
   text-align: center;
   margin: 40px 0;
-  color: #DEDEDE;
 }
 
 .projects-container {
