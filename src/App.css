@@ -250,10 +250,12 @@ form {
 
 .form-group {
   margin: 12px auto;
+  max-width: 95vw;
 }
 
 .form-group-narrow {
-  max-width: 400px;
+  width: 400px;
+  max-width: 90vw;
 }
 
 textarea {
