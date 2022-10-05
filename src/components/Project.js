@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Project({ project }) {
   const { name, link, description, repo, image, alt, deployment } = project;
@@ -22,8 +22,8 @@ function Project({ project }) {
       </a>
       <div className="content-container">
         <a href={link} target="_blank" rel="noreferrer"><h3>{name}</h3></a>
-        <p>{description}</p>
-        <p>{deployMessage}</p>
+        <p className="project-description">{description}</p>
+        <p className="deployment-message">{deployMessage}</p>
         <a href={repo} target="_blank" rel="noreferrer" className="github-element">GitHub Repo</a>
       </div>
     </div>

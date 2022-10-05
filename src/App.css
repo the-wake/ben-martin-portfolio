@@ -207,6 +207,10 @@
   border: 2px solid rgb(0, 225, 255);
 }
 
+.project-container:hover {
+  background: radial-gradient(circle, rgb(232, 243, 255) 0%, rgb(232, 243, 255) 50%, rgb(166, 191, 216) 100%);
+}
+
 .image-link {
   margin: auto 30px auto 10px;
   width: 30%;
@@ -228,7 +232,7 @@
   justify-self: right;
 }
 
-.content-container p {
+.project-description {
   padding-top: 6px;
   font-size: 20px;
 }
@@ -272,6 +276,12 @@ form .button:hover {
 
 .github-element {
   float: right;
+  font-weight: bolder;
+}
+
+.deployment-message {
+  font-size: 17px;
+  font-weight: bold;
 }
 
 #footer {
