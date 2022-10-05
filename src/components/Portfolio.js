@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Project from '../components/Project.js';
+import Project from './Project.js';
 import imgDelver from '../assets/dungeon-delver.jpg';
 import imgJarvis from '../assets/jarvis.jpg';
 import imgSeekers from '../assets/seekers.jpg';
@@ -60,7 +60,7 @@ function Portfolio() {
   ]);
 
   return (
-    <div>
+    <div id="portfolio">
       <h1 className="content-header">Portfolio</h1>
       <div className="projects-container">
         {projects.map((project, index) => {

@@ -69,6 +69,11 @@
   color: gray;
 }
 
+#resume-container {
+  height: fit-content;
+  width: fit-content;
+}
+
 .jumbotron {
   background: url("./assets/background.jpg") no-repeat center fixed;
   -webkit-background-composite: cover;
