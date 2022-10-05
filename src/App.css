@@ -120,14 +120,6 @@
   padding: 0 30px;
 }
 
-/* #home-button {
-  color: rgb(0, 225, 225);
-  background: radial-gradient(circle, rgba(47, 49, 66, 1) 0%, rgb(29, 28, 31) 100%);
-  text-align: center;
-  padding-bottom: 10px;
-  width: 100vw;
-} */
-
 #pfp-container {
   flex: 0 2 400px;
 }
@@ -200,7 +192,8 @@
   display: flex;
   padding: 10px;
   margin: 20px auto;
-  max-width: 1600px;
+  width: 1600px;
+  max-width: 95vw;
   background: whitesmoke;
   border-radius: 14px;
   border: 2px solid rgb(0, 225, 255);
