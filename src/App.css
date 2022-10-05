@@ -214,6 +214,7 @@
 .image-link {
   margin: auto 30px auto 10px;
   width: 30%;
+  min-width: fit-content;
   max-width: 400px;
 }
 
@@ -286,21 +287,38 @@ form .button:hover {
 
 #footer {
   background-color: black;
+  min-height: fit-content;
   padding: 16px;
   border-top: 2px solid rgb(0, 225, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 
+#footer a {
+  color: rgb(0, 225, 225);
+}
+
 #footer p {
   color: rgb(148, 148, 148);
   display: inline;
-  padding-left: 40px;
   font-size: 18px;
 }
 
-#footer a {
-  color: rgb(0, 225, 225);
+#footer-left {
+  display: inline;
+}
+
+#footer-left p {
+  margin-left: 40px;
+}
+
+#footer-right {
+  display: inline;
+  float: right;
+}
+
+#footer-right p {
+  margin-right: 40px;
 }
 
 @media screen and (max-width: 992px) {
@@ -321,15 +339,16 @@ form .button:hover {
     display: none;
   }
 
-  .project-image {
+  .image-link {
     display: none;
   }
 
   .nav-item {
     width: 125px;
-    height: 65px;
-    font-size: 22px;
-    line-height: 65px;
+    height: 45px;
+    font-size: 18px;
+    line-height: 45px;
+    margin: 10px;
     border-radius: 16px;
   }
 
@@ -360,5 +379,14 @@ form .button:hover {
 
   #portfolio {
     margin: 0 20px;
+  }
+
+  .project-container {
+    margin-left: auto;
+    padding: 24px;
+  }
+
+  #footer-right {
+    display: none;
   }
 }
