@@ -36,13 +36,15 @@ function ContentContainer() {
   };
 
   return (
-    <div className="body">
+    <div id="body">
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
-      { currentPage === 'Resume' ? null : <Banner />}
-      <div id="main-content">
-        {renderPage()}
+      <div id="main-container">
+        {currentPage === 'Resume' ? null : <Banner />}
+        <div id="main-content">
+          {renderPage()}
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   )
 };

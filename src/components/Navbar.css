@@ -1,0 +1,70 @@
+#menu {
+  position: sticky;
+  top: 0;
+  max-width: 250px;
+  height: 100vh;
+}
+
+#navbar {
+  /* z-index: 1020; */
+  position: sticky;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background: radial-gradient(circle, rgb(29, 28, 31) 0%, rgb(28, 29, 39) 100%);
+  /* border-top-left-radius: 12px; */
+  /* border-top-right-radius: 12px; */
+  /* box-shadow: 2px 5px #000000; */
+  border-right: 2px solid rgb(0, 225, 255);
+  border-radius: 0;
+}
+
+.nav-item {
+  flex: 1, 1, 250px;
+  width: 250px;
+  height: 40px;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 18px;
+  text-align: center;
+  line-height: 0px;
+  color: #DEDEDE;
+  /* background: radial-gradient(circle, rgba(46, 49, 52, 1) 0%, rgb(27, 21, 21) 100%); */
+  border-radius: 3px;
+  /* border-width: 2px 0;
+  border-style: solid;
+  border-color: #7c7c7c; */
+  cursor: pointer;
+}
+
+.nav-divider {
+  height: 1px;
+  width: 70%;
+  background: rgb(222, 222, 222);
+  background: radial-gradient(circle, rgba(222, 222, 222, .7) 0%, rgba(222, 222, 222, 0.0) 100%);
+}
+
+.active {
+  background: radial-gradient(circle, rgba(46, 49, 52, 1) 0%, rgba(93, 20, 20, 1) 100%);
+  border-color: black;
+  box-shadow: 2px 2px #4d4d4d;
+}
+
+.nav-item:hover {
+  color: white;
+  background: radial-gradient(circle, rgb(54, 56, 58) 0%, rgb(100, 18, 18) 100%);
+  border-color: black;
+  box-shadow: 2px 2px #2e7b81;
+}
+
+#navbar a {
+  color: #DEDEDE;
+  text-decoration: none;
+}
+
+#navbar a {
+  color: gray;
+}

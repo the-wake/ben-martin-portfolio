@@ -3,78 +3,22 @@
 }
 
 * {
-  scroll-margin-top: 125px;
+  scroll-margin-top: 25px;
   border-radius: 9px;
 }
 
-.body {
+#main-container {
+  width: 100%;
+}
+
+#body {
+  display: flex;
+  flex-direction: row;
   background-color: rgb(29, 28, 31);
   background: var(--main-gradient);
   border-radius: 0px;
   min-width: fit-content;
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
-}
-
-#navbar {
-  z-index: 1020;
-  display: flex;
-  width: 97%;
-  flex-wrap: wrap;
-  margin: auto;
-  justify-content: space-around;
-  background: radial-gradient(circle, rgba(47, 49, 66, 1) 0%, rgb(29, 28, 31) 100%);
-  /* border-top-left-radius: 12px;
-  border-top-right-radius: 12px; */
-  box-shadow: 2px 5px #000000;
-  border-bottom: 2px solid black;
-  border-left: 2px solid rgb(0, 225, 255);
-  border-bottom: 2px solid rgb(0, 225, 255);
-  border-right: 2px solid rgb(0, 225, 255);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-.nav-item {
-  width: 250px;
-  height: 55px;
-  margin: 20px;
-  font-size: 22px;
-  text-align: center;
-  line-height: 50px;
-  background: radial-gradient(circle, rgba(46, 49, 52, 1) 0%, rgb(27, 21, 21) 100%);
-  color: #DEDEDE;
-  box-shadow: 2px 2px black;
-  border-radius: 20px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #7c7c7c;
-  cursor: pointer;
-}
-
-.active {
-  background: radial-gradient(circle, rgba(46, 49, 52, 1) 0%, rgba(93, 20, 20, 1) 100%);
-  border-color: black;
-  box-shadow: 2px 2px #4d4d4d;
-}
-
-.nav-item:hover {
-  color: white;
-  background: radial-gradient(circle, rgb(54, 56, 58) 0%, rgb(100, 18, 18) 100%);
-  border-color: black;
-  box-shadow: 2px 2px #2e7b81;
-}
-
-#navbar a {
-  color: #DEDEDE;
-  text-decoration: none;
-}
-
-#navbar a {
-  color: gray;
+  max-width: 100vw;
 }
 
 #resume-container {
@@ -87,8 +31,7 @@
   background: url("./assets/background.jpg") no-repeat center fixed;
   -webkit-background-composite: cover;
   background-size: cover;
-  height: 90vh;
-  width: 95vw;
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   color: whitesmoke;
@@ -290,6 +233,7 @@ form .button:hover {
   padding: 16px;
   border-top: 2px solid rgb(0, 225, 255);
   border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 
@@ -342,14 +286,14 @@ form .button:hover {
     display: none;
   }
 
-  .nav-item {
+  /* .nav-item {
     width: 125px;
     height: 45px;
     font-size: 18px;
     line-height: 45px;
     margin: 10px;
     border-radius: 16px;
-  }
+  } */
 
   #pfp-container {
     display: none;
