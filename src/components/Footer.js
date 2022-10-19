@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Footer() {
+function Footer({ handlePageChange }) {
   return (
     <div id="footer">
       <div id="footer-left">
+        <p><a className="s-toggle" href="#/resume" onClick={() => handlePageChange('Resume')}>Résumé</a></p>
         <p><a href="https://www.linkedin.com/in/ben-martin-26266443/" target="_blank" rel="noreferrer">LinkedIn</a></p>
         <p><a href="https://github.com/the-wake/" target="_blank" rel="noreferrer">GitHub</a></p>
         <p><a href="https://boardgamegeek.com/user/bmartin2009" target="_blank" rel="noreferrer">BoardGameGeek</a></p>
@@ -13,6 +14,6 @@ function Footer() {
       </div>
     </div>
   )
-}
+};
 
 export default Footer;

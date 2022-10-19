@@ -27,6 +27,15 @@
   border-radius: 0;
 }
 
+#navbar a {
+  text-decoration: none;
+  color: gray;
+}
+
+#navbar a:hover {
+  color: #DEDEDE;
+}
+
 .nav-item {
   flex: 1, 1, 250px;
   width: 250px;
@@ -38,7 +47,7 @@
   line-height: 0px;
   color: #DEDEDE;
   /* background: radial-gradient(circle, rgba(46, 49, 52, 1) 0%, rgb(27, 21, 21) 100%); */
-  border-radius: 3px;
+  border-radius: 0;
   /* border-width: 2px 0;
   border-style: solid;
   border-color: #7c7c7c; */
@@ -60,22 +69,22 @@
 
 .nav-item:hover {
   color: white;
-  background: radial-gradient(circle, rgb(54, 56, 58) 0%, rgb(100, 18, 18) 100%);
+  /* background: radial-gradient(circle, rgb(54, 56, 58) 0%, rgb(100, 18, 18) 100%); */
+  background: radial-gradient(circle, rgb(98, 96, 96) 100%, rgb(68, 70, 72) 0%);
   border-color: black;
-  box-shadow: 2px 2px #2e7b81;
+  /* box-shadow: 2px 2px #2e7b81; */
 }
 
-#navbar a {
-  color: #DEDEDE;
-  text-decoration: none;
-}
-
-#navbar a {
-  color: gray;
+.s-b-toggle {
+  display: none;
 }
 
 @media screen and (max-width: 992px) {
   #navbar {
     display: none;
+  }
+
+  .s-b-toggle {
+    display: block;
   }
 }

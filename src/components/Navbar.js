@@ -9,36 +9,36 @@ function Navbar({ currentPage, handlePageChange }) {
         currentPage !== 'Resume'
           ?
           <div id="navbar">
-            <div
+            <a
               className="nav-item" id="about-link" href="#/about"
               onClick={() => handlePageChange('About')}>
               About Me
-            </div>
+            </a>
             <div className="nav-divider"></div>
-            <div
+            <a
               className="nav-item" id="portfolio-link" href="#/portfolio"
               onClick={() => handlePageChange('Portfolio')}>
               Portfolio
-            </div>
+            </a>
             <div className="nav-divider"></div>
-            <div
+            <a
               className="nav-item" id="contact-link" href="#/contact"
               onClick={() => handlePageChange('Contact')}>
               Contact
-            </div>
+            </a>
             <div className="nav-divider"></div>
-            <div
+            <a
               className="nav-item" id="resume-link" href="#/resume"
               onClick={() => handlePageChange('Resume')}>
               Résumé
-            </div>
+            </a>
           </div>
           : <div id="navbar">
-            <div
+            <a
               className="nav-item" id="back-link" href="#/"
               onClick={() => handlePageChange('About')}>
               Back
-            </div>
+            </a>
           </div>
       }
     </div>

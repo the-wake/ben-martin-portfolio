@@ -12,9 +12,9 @@ function ContentContainer() {
 
   const renderPage = () => {
     if (currentPage !== 'Resume') {
-      return <MainPage />;
+      return <MainPage handlePageChange={handlePageChange} />;
     } else {
-      return <Resume />;
+      return <Resume handlePageChange={handlePageChange} />;
     };
   };
 
@@ -43,7 +43,7 @@ function ContentContainer() {
         <div id="main-content">
           {renderPage()}
         </div>
-        {currentPage !== 'Resume' ? <Footer /> : null}
+        {currentPage !== 'Resume' ? <Footer handlePageChange={handlePageChange}/> : null}
       </div>
     </div>
   )

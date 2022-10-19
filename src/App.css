@@ -125,6 +125,10 @@
   text-align: center;
 }
 
+#about {
+  margin-top: 54px;
+}
+
 .content-header {
   color: #DEDEDE;
   text-align: center;
@@ -269,7 +273,7 @@ form .button:hover {
   margin-right: 40px;
 }
 
-.s-toggle {
+.s-toggle, .s-b-toggle {
   display: none;
 }
 
@@ -343,6 +347,10 @@ form .button:hover {
   }
 
   .s-toggle {
+    display: inline;
+  }
+
+  .s-b-toggle {
     display: block;
   }
 }
