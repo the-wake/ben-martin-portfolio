@@ -27,25 +27,17 @@
   border-radius: 0;
 }
 
-#navbar a {
-  text-decoration: none;
-  color: gray;
-}
-
-#navbar a:hover {
-  color: #DEDEDE;
-}
-
 .nav-item {
   flex: 1, 1, 250px;
   width: 250px;
   height: 40px;
   margin: 0 auto;
   padding: 20px 0;
+  text-decoration: none;
+  color: gray;
   font-size: 18px;
   text-align: center;
   line-height: 0px;
-  color: #DEDEDE;
   /* background: radial-gradient(circle, rgba(46, 49, 52, 1) 0%, rgb(27, 21, 21) 100%); */
   border-radius: 0;
   /* border-width: 2px 0;
@@ -54,26 +46,26 @@
   cursor: pointer;
 }
 
+.nav-item:hover {
+  color: white;
+  /* background: radial-gradient(circle, rgb(54, 56, 58) 0%, rgb(100, 18, 18) 100%); */
+  background: radial-gradient(circle, rgba(68, 70, 72, 1) 0%, rgba(98, 96, 96, 0) 100%);
+  border-color: black;
+  /* box-shadow: 2px 2px #2e7b81; */
+}
+
 .nav-divider {
   height: 1px;
   width: 70%;
   background: rgb(222, 222, 222);
-  background: radial-gradient(circle, rgba(222, 222, 222, .7) 0%, rgba(222, 222, 222, 0.0) 100%);
+  background: radial-gradient(circle, rgba(185, 182, 182, 0.7) 0%, rgba(222, 222, 222, 0.0) 100%);
 }
 
-.active {
+/* .active {
   background: radial-gradient(circle, rgba(46, 49, 52, 1) 0%, rgba(93, 20, 20, 1) 100%);
   border-color: black;
   box-shadow: 2px 2px #4d4d4d;
-}
-
-.nav-item:hover {
-  color: white;
-  /* background: radial-gradient(circle, rgb(54, 56, 58) 0%, rgb(100, 18, 18) 100%); */
-  background: radial-gradient(circle, rgb(98, 96, 96) 100%, rgb(68, 70, 72) 0%);
-  border-color: black;
-  /* box-shadow: 2px 2px #2e7b81; */
-}
+} */
 
 .s-b-toggle {
   display: none;
