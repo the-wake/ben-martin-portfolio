@@ -43,7 +43,7 @@ function ContentContainer() {
         <div id="main-content">
           {renderPage()}
         </div>
-        <Footer />
+        {currentPage !== 'Resume' ? <Footer /> : null}
       </div>
     </div>
   )

@@ -7,8 +7,13 @@
   border-radius: 9px;
 }
 
+#root {
+  background-color: rgb(29, 28, 31);
+}
+
 #main-container {
   width: 100%;
+  min-height: 100vh;
 }
 
 #body {
@@ -264,6 +269,10 @@ form .button:hover {
   margin-right: 40px;
 }
 
+.s-toggle {
+  display: none;
+}
+
 @media screen and (max-width: 992px) {
   .jumbotron {
     height: fit-content;
@@ -331,5 +340,9 @@ form .button:hover {
 
   #footer-right {
     display: none;
+  }
+
+  .s-toggle {
+    display: block;
   }
 }

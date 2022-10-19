@@ -1,3 +1,7 @@
+.full-height {
+  min-height: 100%;
+}
+
 #menu {
   position: sticky;
   top: 0;
@@ -8,8 +12,9 @@
 #navbar {
   /* z-index: 1020; */
   position: sticky;
-  top: 0;
-  height: 100%;
+  top: 0px;
+  max-width: 250px;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,7 +31,7 @@
   flex: 1, 1, 250px;
   width: 250px;
   height: 40px;
-  margin: 0;
+  margin: 0 auto;
   padding: 20px 0;
   font-size: 18px;
   text-align: center;
@@ -67,4 +72,10 @@
 
 #navbar a {
   color: gray;
+}
+
+@media screen and (max-width: 992px) {
+  #navbar {
+    display: none;
+  }
 }

@@ -4,7 +4,7 @@ import './Navbar.css';
 function Navbar({ currentPage, handlePageChange }) {
 
   return (
-    <div id="menu">
+    <div className="full-height">
       {
         currentPage !== 'Resume'
           ?
