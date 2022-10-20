@@ -4,11 +4,11 @@ import Blurb from '../components/Blurb.js';
 import Portfolio from '../components/Portfolio.js';
 import Contact from '../components/Contact.js';
 
-function MainPage() {
+function MainPage({ handlePageChange }) {
 
   return (
     <div>
-      <Blurb />
+      <Blurb handlePageChange={handlePageChange} />
       <Portfolio />
       <Contact />
     </div>

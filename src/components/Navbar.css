@@ -1,0 +1,84 @@
+.full-height {
+  min-height: 100%;
+}
+
+#menu {
+  position: sticky;
+  top: 0;
+  max-width: 250px;
+  height: 100vh;
+}
+
+#navbar {
+  position: sticky;
+  top: 0px;
+  max-width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background: radial-gradient(circle, rgb(29, 28, 31) 0%, rgb(28, 29, 39) 100%);
+  /* border-top-left-radius: 12px; */
+  /* border-top-right-radius: 12px; */
+  border-radius: 0;
+  border-right: 2px solid rgb(0, 225, 255);
+  /* box-shadow: 2px 5px #000000; */
+  /* box-shadow: 2px 0 10px rgb(200, 200, 200); */
+}
+
+.nav-item {
+  /* z-index: 1020; */
+  flex: 1, 1, 250px;
+  width: 250px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 3vh 0;
+  text-decoration: none;
+  color: rgb(165, 165, 165);
+  font-size: 18px;
+  text-align: center;
+  line-height: 0px;
+  /* background: radial-gradient(circle, rgba(46, 49, 52, 1) 0%, rgb(27, 21, 21) 100%); */
+  border-radius: 0;
+  /* border-width: 2px 0;
+  border-style: solid;
+  border-color: #7c7c7c; */
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: white;
+  /* background: radial-gradient(circle, rgb(54, 56, 58) 0%, rgb(100, 18, 18) 100%); */
+  background: radial-gradient(circle, rgba(68, 70, 72, 1) 0%, rgba(98, 96, 96, 0) 82%);
+  border-color: black;
+  /* box-shadow: 2px 2px #2e7b81; */
+}
+
+.nav-divider {
+  height: 1px;
+  width: 70%;
+  margin: 0;
+  background: rgb(222, 222, 222);
+  background: radial-gradient(circle, rgba(185, 182, 182, 0.7) 0%, rgba(222, 222, 222, 0.0) 100%);
+}
+
+/* .active {
+  background: radial-gradient(circle, rgba(46, 49, 52, 1) 0%, rgba(93, 20, 20, 1) 100%);
+  border-color: black;
+  box-shadow: 2px 2px #4d4d4d;
+} */
+
+.s-b-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  #navbar {
+    display: none;
+  }
+
+  .s-b-toggle {
+    display: block;
+  }
+}
