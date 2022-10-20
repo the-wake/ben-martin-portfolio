@@ -6,7 +6,7 @@ function Navbar({ currentPage, handlePageChange }) {
   return (
     <div className="full-height">
       {
-        currentPage !== 'Resume'
+        currentPage !== 'fffff'
           ?
           <div id="navbar">
             <div

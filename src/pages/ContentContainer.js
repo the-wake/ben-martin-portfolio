@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar.js';
 import Banner from '../components/Banner.js';
 import Footer from '../components/Footer.js';
@@ -20,20 +20,42 @@ function ContentContainer() {
 
   const handlePageChange = page => {
     setCurrentPage(page);
-    const targetComponent = document.getElementById(page.toLowerCase());
+    //   if (currentPage === 'Resume') {
+    //     setCurrentPage(page);
 
-    // Ignore behavior if user navigates to Resume page.
-    if (page === 'Resume') {
-      window.scrollTo(0, 0);
-    } else if (targetComponent) {
-      // document.getElementById('content-container').scrollIntoView();
-      // console.log(targetComponent);
+    //     setTimeout(() => {
+    //       const targetComponent = document.getElementById(page.toLowerCase());
+    //       if (targetComponent) {
+    //         targetComponent.scrollIntoView({
+    //           alignToTop: true,
+    //           behavior: 'smooth'
+    //         });
+    //       };
+    //     }, 100);
+
+    //   } else {
+    //     setCurrentPage(page);
+    //     const targetComponent = document.getElementById(page.toLowerCase());
+
+    //     if (targetComponent) {
+    //       targetComponent.scrollIntoView({
+    //         alignToTop: true,
+    //         behavior: 'smooth'
+    //       });
+    //     };
+    //   }
+  };
+
+  useEffect(() => {
+    const targetComponent = document.getElementById(currentPage.toLowerCase());
+
+    if (targetComponent) {
       targetComponent.scrollIntoView({
         alignToTop: true,
         behavior: 'smooth'
       });
     };
-  };
+  }, [currentPage]);
 
   return (
     <div id="body">
@@ -43,7 +65,7 @@ function ContentContainer() {
         <div id="main-content">
           {renderPage()}
         </div>
-        {currentPage !== 'Resume' ? <Footer handlePageChange={handlePageChange}/> : null}
+        {currentPage !== 'Resume' ? <Footer handlePageChange={handlePageChange} /> : null}
       </div>
     </div>
   )
