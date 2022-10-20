@@ -239,6 +239,16 @@ form .button:hover {
   font-weight: bold;
 }
 
+.hyperlink-styling {
+  color: #0d6efd;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hyperlink-styling:hover {
+  color: #0a55c5;
+}
+
 #footer {
   background-color: black;
   min-height: fit-content;
@@ -259,6 +269,10 @@ form .button:hover {
   font-size: 18px;
 }
 
+#footer span {
+  color: rgb(0, 225, 225);
+}
+
 #footer-left {
   display: inline;
 }
@@ -276,7 +290,8 @@ form .button:hover {
   margin-right: 40px;
 }
 
-.s-toggle, .s-b-toggle {
+.s-toggle,
+.s-b-toggle {
   display: none;
 }
 

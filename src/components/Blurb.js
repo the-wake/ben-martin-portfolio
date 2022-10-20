@@ -21,7 +21,7 @@ function Blurb({ handlePageChange }) {
             In addition to web design and programming, I design board games. I have two published games and more in the works! In my free time, I enjoy playing Smash Bros. Ultimate (Samus main) and Dungeons & Dragons 5th edition. I have a borderline unhealthy love of the cyberpunk genre and firmly believe that Ghost in the Shell 1995 is the greatest film of all time.
             <br />
             <br />
-            For more information, check out my <a href="https://www.linkedin.com/in/ben-martin-26266443/" target="_blank" rel="noreferrer">LinkedIn profile</a>, <a href="https://github.com/the-wake/" target="_blank" rel="noreferrer">GitHub Page</a>, or <a href="#/resume" onClick={() => handlePageChange('Resume')}>Résumé</a>.
+            For more information, check out my <a href="https://www.linkedin.com/in/ben-martin-26266443/" target="_blank" rel="noreferrer">LinkedIn profile</a>, <a href="https://github.com/the-wake/" target="_blank" rel="noreferrer">GitHub Page</a>, or <span className={"hyperlink-styling"} onClick={() => handlePageChange('Resume')}>Résumé</span>.
           </p>
 
         </div>

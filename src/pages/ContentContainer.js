@@ -5,7 +5,6 @@ import Footer from '../components/Footer.js';
 import MainPage from './MainPage.js'
 import Resume from './Resume.js';
 
-// I'd like to get it to scroll to the top of the rendered div when clicked, but I can't find a good way of getting that to happen with how the pages render and the header vh is set up.
 function ContentContainer() {
 
   const [currentPage, setCurrentPage] = useState('');
@@ -20,36 +19,14 @@ function ContentContainer() {
 
   const handlePageChange = page => {
     setCurrentPage(page);
-    //   if (currentPage === 'Resume') {
-    //     setCurrentPage(page);
-
-    //     setTimeout(() => {
-    //       const targetComponent = document.getElementById(page.toLowerCase());
-    //       if (targetComponent) {
-    //         targetComponent.scrollIntoView({
-    //           alignToTop: true,
-    //           behavior: 'smooth'
-    //         });
-    //       };
-    //     }, 100);
-
-    //   } else {
-    //     setCurrentPage(page);
-    //     const targetComponent = document.getElementById(page.toLowerCase());
-
-    //     if (targetComponent) {
-    //       targetComponent.scrollIntoView({
-    //         alignToTop: true,
-    //         behavior: 'smooth'
-    //       });
-    //     };
-    //   }
   };
 
   useEffect(() => {
     const targetComponent = document.getElementById(currentPage.toLowerCase());
 
-    if (targetComponent) {
+    if (currentPage === '' && targetComponent) {
+      return;
+    } else if (targetComponent) {
       targetComponent.scrollIntoView({
         alignToTop: true,
         behavior: 'smooth'
@@ -61,14 +38,14 @@ function ContentContainer() {
     <div id="body">
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       <div id="main-container">
-        {currentPage === 'Resume' ? null : <Banner />}
+        {currentPage !== 'Resume' ? <Banner /> : null}
         <div id="main-content">
           {renderPage()}
         </div>
         {currentPage !== 'Resume' ? <Footer handlePageChange={handlePageChange} /> : null}
       </div>
     </div>
-  )
+  );
 };
 
 export default ContentContainer;
