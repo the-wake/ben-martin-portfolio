@@ -7,11 +7,10 @@ function Resume({ handlePageChange }) {
 
   return (
     <div id="resume-container">
-      <object id="resume" data={resume} type="application/pdf" width="850px" height='1150px' />
+      <object id="resume" data={resume} type="application/pdf" width="850px" height="1150px" aria-label="Résumé" />
       <div className="navbar s-b-toggle"><div className="nav-item s-b-toggle" onClick={() => handlePageChange('')}>Back</div></div>
     </div>
   );
-
 };
 
 export default Resume;

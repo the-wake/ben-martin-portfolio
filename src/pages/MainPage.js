@@ -7,10 +7,10 @@ import Contact from '../components/Contact.js';
 function MainPage({ handlePageChange }) {
 
   return (
-    <div>
+    <div id="main-content">
       <Blurb handlePageChange={handlePageChange} />
       <Portfolio />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 };

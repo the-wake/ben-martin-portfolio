@@ -39,9 +39,7 @@ function ContentContainer() {
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       <div id="main-container">
         {currentPage !== 'Resume' ? <Banner /> : null}
-        <div id="main-content">
-          {renderPage()}
-        </div>
+        {renderPage()}
         {currentPage !== 'Resume' ? <Footer handlePageChange={handlePageChange} /> : null}
       </div>
     </div>
