@@ -10,7 +10,7 @@ function MainPage({ handlePageChange }) {
     <div id="main-content">
       <Blurb handlePageChange={handlePageChange} />
       <Portfolio />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 };
