@@ -83,17 +83,16 @@
 }
 
 #resume-container {
-  /* width: fit-content; */
+  width: fit-content;
   margin: 0 auto;
 }
 
 #blurb-container {
   display: flex;
-  /* flex-wrap: wrap; */
   align-content: center;
   padding: .75rem;
-  justify-content: space-evenly;
-  /* max-width: 2000px; */
+  justify-content: space-between;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
