@@ -5,13 +5,13 @@ function Project({ project }) {
 
   const genMessage = () => {
     if (deployment === 'github-pages') {
-      return `Deployed on Github Pages.`
+      return `Deployed on Github Pages`
     } else if (deployment === 'vps') {
       return 'Deployed via personal VPS'
     } else if (deployment === 'heroku') {
-      return `Deployed on Heroku – Expect delay on load.`
+      return `Deployed on Heroku – Expect delay on load`
     } else if (deployment === 'backend-only') {
-      return `Backend only – See GitHub Repo for readme and demonstration.`
+      return `Backend only – See GitHub Repo for readme and demonstration`
     } else {
       return `Hosted on ${deployment}`;
     };
