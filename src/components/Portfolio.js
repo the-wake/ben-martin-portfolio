@@ -16,7 +16,7 @@ function Portfolio() {
       link: 'https://www.minnetonkapress.com/',
       description: `An e-commerce website for the Minnesota-based publisher Minnetonka Press, developed as a freelance project. Built in Squarespace and using its e-commerce suite, with custom layout to meet the client's needs.`,
       image: imgPress,
-      alt: 'A robust currency calculator and roll planner for Fate/Grand Order.',
+      alt: 'Digital storefront for Minnesota publisher Minnetonka Press.',
       repo: null,
       deployment: 'Squarespace',
     },
